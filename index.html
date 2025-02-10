@@ -114,7 +114,10 @@
 		<div class="recepie_area">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-4 col-lg-4 col-md-6">
+					<div
+						class="col-xl-4 col-lg-4 col-md-6 card"
+						onclick="openRecipe('egg_manchurian')"
+					>
 						<div class="single_recepie text-center">
 							<div class="recepie_thumb">
 								<img src="img/recepie/recpie_1.png" alt="" />
@@ -125,7 +128,10 @@
 							<a href="#" class="line_btn">View Full Recipe</a>
 						</div>
 					</div>
-					<div class="col-xl-4 col-lg-4 col-md-6">
+					<div
+						class="col-xl-4 col-lg-4 col-md-6 card"
+						onclick="openRecipe('pure_vegetable_bowl')"
+					>
 						<div class="single_recepie text-center">
 							<div class="recepie_thumb">
 								<img src="img/recepie/recpie_2.png" alt="" />
@@ -136,7 +142,10 @@
 							<a href="#" class="line_btn">View Full Recipe</a>
 						</div>
 					</div>
-					<div class="col-xl-4 col-lg-4 col-md-6">
+					<div
+						class="col-xl-4 col-lg-4 col-md-6 card"
+						onclick="openRecipe('egg_masala_ramen')"
+					>
 						<div class="single_recepie text-center">
 							<div class="recepie_thumb">
 								<img src="img/recepie/recpie_3.png" alt="" />
@@ -293,5 +302,11 @@
 		<script src="js/mail-script.js"></script>
 
 		<script src="js/main.js"></script>
+
+		<script>
+			function openRecipe(recipeName) {
+				window.location.href = `recipes_details.html?recipe=${recipeName}`;
+			}
+		</script>
 	</body>
 </html>
